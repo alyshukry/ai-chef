@@ -1,7 +1,9 @@
-import IngredientsInput from '../components/IngredientsInput'
+import Main from '../components/Main'
 
 export default function Home() {
-  return (
-    <IngredientsInput />
-  )
+    return (
+        <>
+            <Main />
+        </>
+    )
 }
