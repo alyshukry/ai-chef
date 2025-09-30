@@ -23,7 +23,10 @@ function IngredientsInput() {
     }
 
     function handleClick() {
-        async function query(data: any) {
+        async function query(data: {
+            messages: { role: string; content: string }[];
+            model: string;
+        }) {
             const response = await fetch(
                 "https://router.huggingface.co/v1/chat/completions",
                 {
@@ -75,9 +78,9 @@ function IngredientsInput() {
             >
                 Create recipe
             </button>
-            <div 
-            className="mb-12"
-                dangerouslySetInnerHTML={{ __html: recipe }} 
+            <div
+                className="mb-12"
+                dangerouslySetInnerHTML={{ __html: recipe }}
             />
         </main>
     )
