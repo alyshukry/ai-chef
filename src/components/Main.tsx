@@ -58,7 +58,7 @@ function IngredientsInput() {
             className="w-1/1 min-h-svh flex flex-col items-center justify-center *:shrink-0"
         >
             <h1
-                className="text-3xl font-semibold mb-8"
+                className="text-3xl font-semibold mb-10"
             >
                 What are we cooking?
             </h1>
@@ -70,7 +70,7 @@ function IngredientsInput() {
             ></input>
             {ingredients.length > 0 && <Ingredients ingredients={ingredients} onRemove={handleRemoveIngredient} />}
             <button
-                className="bg-orange-400 mt-8 mb-12 h-10 rounded-full pl-8 pr-8 text-white font-semibold hover:cursor-pointer hover:bg-orange-300"
+                className="bg-orange-400 mt-10 mb-12 h-10 rounded-full pl-8 pr-8 text-white font-semibold hover:cursor-pointer hover:bg-orange-300"
                 onClick={handleClick}
             >
                 Create recipe
